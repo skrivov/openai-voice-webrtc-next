@@ -17,6 +17,22 @@ This is a WebRTC-based audio streaming application using OpenAI's API, developed
 
  Check out the [tutorial](./tutorial.md) for a brief explanation of WebRTC and code walkthrough.
 
+## Docker setup
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/skrivov/openai-webrtc-audio-next.git
+cd openai-webrtc-audio
+```
+### 2. Build image and start container
+
+`docker build -t voice -f Dockerfile`
+
+`docker run -d -p 3000:3000 --name voice-app -e OPENAI_API_KEY=<key> voice`
+
+### 3. Usage
+1. Open the app in your browser: `http://localhost:3000`.
+
 ## Installation
 
 ### 1. Clone the Repository
